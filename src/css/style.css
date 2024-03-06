@@ -1,17 +1,23 @@
-
 /* Phan header - footer*/
-main a{
+
+main a {
     text-decoration: none;
 }
-header{
+header {
     background-color: rgb(84, 85, 92);
+    
 }
-footer{
+footer {
     background-color: rgb(84, 85, 92);
+    padding: 30px;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 .shop{
     display: flex;
@@ -62,19 +68,126 @@ footer p{
 }
 /* Het header - footer */
 main{
-   
+   box-sizing: border-box;
     background-color: rgb(231, 239, 243);
+    /* background-color: rgb(84, 85, 92); */
 }
 .btn-dl{
     background-color: rgb(45, 47, 48);
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
-    border-radius: 5px;
+   text-align: center;
+   margin-left: 45%;
+    border-radius: 20px;
     border: 1px solid whitesmoke;
     margin-top: 15px;
     padding: 7px;
+ 
 }
 .btn-dl a{
+    animation:  doimau ease 1s infinite;
+}
+/* lien he */
+.mes{
+    position: fixed;
+    z-index: 99;
+    top: 300px;
+    right: 15px;
+    display: flex;
+    height: 30px;
+    font-size: 20px;
+}
+.mes-item1 a i{
+     font-size: 45px;
+}
+.mes-item2{
+  margin-right: 10px;
+ width: 0;
+ overflow: hidden;
+ transition: width ease 1s;
+}
+.mes:hover div.mes-item2{
+    width: 100%;
+} 
+
+/* kt lien he */
+@keyframes doimau {
+    from{
+        color: white;
+    }
+    to{
+        color: aqua;
+    }
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px;
+}
+
+ h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-weight: bold;
     color: white;
+}
+.bang_gia img{
+    width: 100%;
+    border: 1px rgb(127, 174, 199) solid;
+    border-radius: 5px;
+    box-shadow: 0 0 12px;
+    max-width: 1000px;
+}
+.bg{
+    background-color: rgb(84, 85, 92);
+    color: aqua;
+}
+.bang_gia1{
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(84, 85, 92);
+    margin: 20px;
+   
+}
+img{
+    max-width: 1000px;
+}
+a {
+        text-decoration: none; /* Không gạch chân cho liên kết */
+        font-weight: bold;
+}
+.card-sp {
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.sp_items {
+    background-color: rgb(84, 85, 92);
+}
+.sp_it {
+    padding: 5px;
+}
+.card:hover  {
+    transform: scale(1.1);
+    box-sizing: border-box;
+}
+.card {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.btn_xt {
+    text-align: center;
+    justify-content: center;
+   border-radius: 10px;
+    padding: 10px;
+    margin-left: 45%;
+    background-color: rgb(84, 85, 92);
+    box-sizing: border-box;
+    color: white;
+}
+.tk-sp input{
+        width: 90% ;
+    
+}
+.tk-sp button{
+    width: 10%;
 }

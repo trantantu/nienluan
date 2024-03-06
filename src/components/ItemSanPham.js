@@ -5,7 +5,7 @@ export default function ItemSanPham(props){
 <div className="khung">
                   <div className="product-block card" data-product-id="10" data-product-name={props.tensp}
                     data-product-price={props.gia} data-product-img={props.hinh}>
-                    <a href="chitiet1.html">
+                    <a href="chitiet">
                       <div className="hinhsp">
                         <img className="hinh1" src={props.hinh}/>
                       </div>
@@ -18,7 +18,7 @@ export default function ItemSanPham(props){
                     </button>
                     <div className="ttsp">
                       <h3 className="tensp">
-                        <a href="chitiet.html"> {props.tensp}</a>
+                        <a href="/chitiet"> {props.tensp}</a>
                       </h3>
                       <div className="khunggia">
                           <span className="gia">{props.gia}</span>

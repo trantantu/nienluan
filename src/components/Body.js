@@ -1,7 +1,10 @@
 import React from "react";
+import { Route,Routes,Link } from "react-router-dom";
 import '../css/style.css';
 import '../css/dangnhap.css';
 import MainSanPham from "./MainSanPham";
+import MainChiTiet from "./MainChiTiet";
+import MainDangNhap from "./MainDangNhap";
 
 export default function Body(){
     return(
@@ -10,7 +13,7 @@ export default function Body(){
     <div className="container py-3">
       <div className="row">
         <div className="col-3 logo">
-          <img src="img/img_logo.png" alt="" />
+          <img src="./img/img_logo.png" alt="" />
         </div>
         <div className="col-5">
           <form className="d-flex tk-sp">
@@ -104,7 +107,12 @@ export default function Body(){
   </header>
   {/* phần nội dung */}
   <main id="main">
-    <MainSanPham/>
+    <Routes>
+      <Route path="/" element={<MainChiTiet/>}></Route>
+      <Route path="/sanpham" element={<MainSanPham/>}></Route>
+      <Route path="/chitiet" element={<MainChiTiet/>}></Route>
+      <Route path="/dangnhap" element={<MainDangNhap/>}></Route>
+    </Routes>
   </main>
   <footer>
     <div className="container">
